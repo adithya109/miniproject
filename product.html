@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+        <div class="navmenu d-flex justify-content-between mx-5 my-3 align-items-center" style="height: 50px; display: flex; justify-content: space-between; align-items: center; margin: 12px 20px;">
+            <div>
+                <!-- <img style="width: 120px; height: 50px; object-fit: cover;" class="px-2" src="./images/logoo.png" alt="logo"> -->
+            </div>
+            <div>
+                <ul>
+                    <li ><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="">Page</a></li>
+                </ul>
+            </div>
+            <div class="">
+                <ul class="icon">
+                    <a class="ml-5" href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <a href=""><i class="fa-regular fa-user"></i></a>
+                    <a href="cart.html"><i class="fa-solid fa-cart-shopping"><link rel="stylesheet"></i></a>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="box">
+    <!-- <div class="navmenu d-flex justify-content-between mx-5 my-3 align-items-center" style="height: 50px;">
+        <div>
+            <img style="width: 120px; height: 50px; object-fit: cover;" class="px-2" src="./images/logoo.png" alt="logo">
+        </div>
+        <div>
+            <ul>
+                <li ><a href="">Home</a></li>
+                <li><a href="">Shop</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="">Page</a></li>
+            </ul>
+        </div>
+        <div class="">
+            <ul class="">
+                <a class="ml-5" href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href=""><i class="fa-regular fa-user"></i></a>
+                <a href="cart.html"><i class="fa-solid fa-cart-shopping"><link rel="stylesheet"></i></a>
+            </ul>
+        </div>
+    </div> -->
+
+<div class="pro">
+    <div class="row">
+        <div class="cols">
+            <div class="slider">
+                <div class="product mx-3">
+                    <img src="./images/p1.png" alt="" onclick="clickme(this)">
+                    <img src="./images/p2.png" alt="" onclick="clickme(this)">
+                    <img src="./images/p3.png" alt="" onclick="clickme(this)">
+                    <img src="./images/p4.png" alt="" onclick="clickme(this)">
+
+                </div>
+                <div class="preview">
+                    <img src="./images/p1.png" id="imgagebox" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="content">
+                <p class="price">Brand:GLOBUS</p>
+                
+                <h2>Women Dyed/Washed bodycorn <br> Dress</h2>
+                <h4>PRICE:</h4>
+                <h2>$99.99</h2>
+                <h3>Product details</h3>
+                
+                <li> This Brown Color Bodycon Dress is made from Lycra Blend</li>
+                   <li>Package contains: 1 dress, 1 jacket</li>
+                    <li>Dry clean</li>
+                    <li>Lycra blend</li>
+                   <li> Product Code: 700139589009</li>
+             
+                
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+              
+                <p>Size: <select name="size">
+                        <option value="select size">Select size</option>
+                        <option value="Small">Small</option>
+                        <option value="medium">medium</option>
+                        <option value="Largr">Large</option>
+                    </select></p>
+                <button type="button" onclick="addToCart('Women Dyed/Washed bodycorn Dress','./images/p1.png', 99)"> 
+                    <i class="fa-solid fa-shopping-cart"></i> Add to cart</button>
+                    <button type="button">
+                        <i class="fa-regular fa-heart"></i> wishlist</button>
+                   
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+    <div class="">
+
+    <div class="related">
+        <h2>Related Items</h2>
+        <div class="row">
+            <div class="columns"> 
+                <div class="items" style=" display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                    <img src="./images/a1.png">
+                    <div class="details">
+                        <p>Floral Print Fit & Flare Dress</p>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <p>USD $120.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="columns"> 
+                <div class="items" style=" display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                    <img src="./images/a2.png">
+                    <div class="details">
+                        <p>Shirt Dress With Back Tie-up</p>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <p>USD $120.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="items" style=" display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                    <img src="./images/a3.png">
+                    <div class="details">
+                        <p>Women Floral Print Tiered Dress</p>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <p>USD $120.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="columns"> 
+                <div class="items" style=" display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                    <img src="./images/a5.png">
+                    <div class="details">
+                        <p>Women Green Dress</p>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <p>USD $120.00</p>
+                    </div>
+                </div>
+</div>
+<script>
+    function clickme(smallimg) {
+        var fullimg = document.getElementById("imgagebox");
+        fullimg.src = smallimg.src
+    }
+</script>
+<script src="cart.js"></script>
+
+</body>
+
+
+</html>

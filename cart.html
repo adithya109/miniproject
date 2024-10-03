@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <header>
+        <div class="navmenu d-flex justify-content-between mx-5 my-3 align-items-center" style="height: 50px;">
+            <div>
+                <!-- <img style="width: 120px; height: 50px; object-fit: cover;" class="px-2" src="./images/logoo.png" alt="logo"> -->
+            </div>
+            <div>
+                <ul>
+                    <li ><a href="home.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="">Products</a></li>
+                    <li><a href="">Page</a></li>
+                </ul>
+            </div>
+            <div class="">
+                <ul class="">
+                    <a class="ml-5" href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <a href=""><i class="fa-regular fa-user"></i></a>
+                    <a href="cart.html"><i class="fa-solid fa-cart-shopping"><link rel="stylesheet"></i></a>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="container" style=" padding-top: 120px;">
+        <div class="heading">
+            <h1>My Cart</h1>
+        </div>
+
+        <table class="cart-table">
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="product-info">
+                            <img src="./images/b3.png" alt="Product Image">
+                            <span>Checked Croped Shirt</span>
+                        </div>
+                    </td>
+                    <td>$10.00</td>
+                    <td>
+                        <input type="number" value="1" min="1">
+                    </td>
+                    <td>$10.00</td>
+                    <td><button class="remove-btn">Remove</button></td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="product-info">
+                            <img src="./images/c4.png" alt="Product Image">
+                            <span>Oversized T-shirt</span>
+                        </div>
+                    </td>
+                    <td>$15.00</td>
+                    <td>
+                        <input type="number" value="1" min="1">
+                    </td>
+                    <td>$15.00</td>
+                    <td><button class="remove-btn">Remove</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="cart-summary">
+            <h2>Price Details</h2>
+            <div class="summary-item">
+                <span>Delivery Charge:</span>
+                <span>Free</span>
+            </div>
+            <div class="summary-item total">
+                <span>Total:</span>
+                <span>$27.50</span>
+            </div>
+            <button class="checkout-btn">Place Order</button>
+        </div>
+
+        <div id="cart"></div>
+    
+    </div>
+    <script src="cart.js"></script>
+    
+</body>
+</html>

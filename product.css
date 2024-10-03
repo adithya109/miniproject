@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0px;
+    font-family: sans-serif;
+}
+.pro{
+    width: 100%;
+    
+}
+.row{
+    width: 90%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cols{
+    flex-basis: 45%;
+
+}
+.slider{
+    height: 80vh;
+    display: flex;
+}
+.product img{
+    height: 19vh;
+    margin-bottom: 9px;
+    cursor: pointer;
+    opacity: 0.6;
+   
+} 
+.product img :hover{
+    opacity: 1;
+}
+.preview img{
+    height: 100%;
+    
+}
+
+p{
+    margin-bottom: 20px;;
+}
+.brand{
+    background: #008000;
+    width: fit-content;
+    color: #fff;
+    font-size: 12px;
+    padding: 2px 5px;
+}
+h2{
+    font-size: 45px;
+    color: #000000cb;
+    margin-bottom: 20px;
+    font-family: "Zilla Slab", serif;
+}
+.rating{
+    display: flex;
+    height: 15px;
+    color: #fe980f;
+    padding: 10px;
+}
+.rating .fa{
+    color: #008000;
+}
+.price{
+    color:#fe980f;
+    font-size: 26px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+input{
+    width: 30px;
+    border: 1px solid #ccc;
+    font-weight: bold;
+    text-align: center;
+}
+button{
+    color: #fff;
+    font-size: 15px;
+    outline: none;
+    border: 0;
+    border-radius: 5px;
+    background: #219150;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+button .fa{
+    margin-right: 10px;
+
+}
+.related{
+    width: 90%;
+    margin: 0 auto 40px;
+   
+}
+.related .row{
+    width: 100%;
+    height: auto;
+}
+.columns{
+    flex-basis: 22%;
+    height: 100%;
+}
+.items img{
+    width: 250px;
+    height: 300px;
+   
+   
+}
+.details{
+    margin-top: 20px;
+}
+.details .p{
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.details .rating{
+    margin: 10px 0;
+   
+}
+li{
+    font-family: "Caveat", cursive;
+}
+.col{
+    padding-right: 200px;
+}
+.size{
+    padding: 30px;
+}
+.navmenu a{
+    color: black;
+    font-size: 16px;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    font-weight: 400;
+    text-decoration: none;
+    text-align: right;
+}
+.navmenu a:hover{
+    color: red;
+}
+.nav-icons{
+    display: flex;
+    
+}
+
+.navmenu li{
+    display: inline;
+}
+.navmenu ul{
+    text-align: center;
+}
+
+
+h4{
+    color: #ccc;
+}
